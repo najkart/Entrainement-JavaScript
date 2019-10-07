@@ -53,3 +53,22 @@ function changeContent() {
      }
 
 }
+//exo8
+function RemoveColor(){
+    var x=document.getElementById('colorSelect');
+    // var index= x.selectedIndex;
+    // if (index>-1){
+    //     x.options[index]=null;
+    // }
+    x.remove(x.selectedIndex);
+
+}
+//exo9
+function getOptions(){
+    var x=document.getElementById('colorSelect');
+    var text= "Number of elements: " + x.length + " ";
+    for(var i=0 ;i<x.length;i++){
+         text=text+x.options[i].text + " , ";
+    }
+    window.alert(text);
+}
