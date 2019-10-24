@@ -36,7 +36,7 @@ function changeContent() {
     row = prompt("Input the row number", "0");
     cell = prompt("Input cell number", "0");
     content = prompt("Input cell content");
-    var x = document.getElementById('myTable').rows[parseInt(row, 10)].cells;
+    var x = document.getElementById('table6').rows[parseInt(row, 10)].cells;
     x[parseInt(cell, 10)].innerHTML = content;
 }
 //exo7
